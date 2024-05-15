@@ -2,4 +2,644 @@
 {% load static %}
 {% block car %}
 
+<!-- /#page -->
+<div id="wrapper">
+    <div id="page" class="clearfix">
+        <!-- car-listing-list -->
+        <div class="widget-banner-car-listing banner-car-listing-list">
+            <div class="themesflat-container full">
+                <div class="banner-car-listing">
+                    <span class="sub-title">Save up to 15%</span>
+                    <h1 class="title text-white">Autohix <span class="text-red">Rental</span> Car</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- car-listing-list -->
+        <div class="widget-car-listing-list">
+            <div class="themesflat-container">
+                <div class="row car-listing-list">
+                    <div class="col-md-12 col-lg-3">
+                        <div class="search-filter-listing-car">
+                            <div class="filter-header-list">
+                                <h6 class="title-filter">Search by Filter</h6>
+                                <div class="btn-filter">
+                                    <i class="icon-Grid-view"></i>
+                                </div>
+                            </div>
+                            <form id="filter-list-car-side-bar" class="list-filter" action="/">
+                                <div class="form-group">
+                                    <div class="input-search-list">
+                                        <input type="search" class="form-control" placeholder="Search here...">
+                                        <span class="input-group-text " id="search-addon">
+                                            <i class="icon-Vector-1"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="widget widget-price ">
+                                        <div class="caption flex-two">
+                                            <p class="price-range">Price</p>
+                                        </div>
+                                        <div id="slider-range"></div>
+                                        <div class="slider-labels">
+                                            <div>
+                                                <input type="hidden" name="min-value" value="">
+                                                <input type="hidden" name="max-value" value="">
+                                            </div>
+                                            <div class="number-range">
+                                                <span id="slider-range-value1"></span>
+                                                <span id="slider-range-value2"></span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.widget_price -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">Used</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">Used</li>
+                                                <li data-value="New" class="option">New</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">SUV</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">SUV</li>
+                                                <li data-value="Crossover" class="option">Crossover</li>
+                                                <li data-value="Compact" class="option">Compact</li>
+                                                <li data-value="Convertible" class="option">Convertible</li>
+                                                <li data-value="Hatchback" class="option">Hatchback</li>
+                                                <li data-value="Sedan" class="option">Sedan</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">BMV</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">BMV</li>
+                                                <li data-value="Acura" class="option">Acura</li>
+                                                <li data-value="Audi" class="option">Audi</li>
+                                                <li data-value="Bentley" class="option">Bentley</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">X5</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">X5</li>
+                                                <li data-value="3 Series" class="option">3 Series</li>
+                                                <li data-value="718 Boxster T" class="option">718 Boxster T</li>
+                                                <li data-value="718 Cayman" class="option">718 Cayman</li>
+                                                <li data-value="911 Carrera 4" class="option">911 Carrera 4</li>
+                                                <li data-value="A4" class="option">A4</li>
+                                                <li data-value="Bentayga" class="option">Bentayga</li>
+                                                <li data-value="Bentayga Azure" class="option">Bentayga Azure</li>
+                                                <li data-value="Bentayga Technology" class="option">Bentayga
+                                                    Technology</li>
+                                                <li data-value="C Class" class="option">C Class</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">Petrol</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">Petrol</li>
+                                                <li data-value="Diesel" class="option">Diesel</li>
+                                                <li data-value="Electric" class="option">Electric</li>
+                                                <li data-value="Gasoline" class="option">Gasoline</li>
+                                                <li data-value="Hybrid" class="option">Hybrid</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">Manual Transmission</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">Manual Transmission</li>
+                                                <li data-value="Auto" class="option">Auto</li>
+                                                <li data-value="CVT" class="option">CVT</li>
+                                                <li data-value="DCT" class="option">DCT</li>
+                                                <li data-value="MT" class="option">MT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group-wrap">
+                                    <div class="form-group">
+                                        <div class="group-select">
+                                            <div class="nice-select" tabindex="0">
+                                                <span class="current">2024</span>
+                                                <ul class="list">
+                                                    <li data-value class="option selected">2024</li>
+                                                    <li data-value="2023" class="option">2023</li>
+                                                    <li data-value="2022" class="option">2022</li>
+                                                    <li data-value="2021" class="option">2021</li>
+                                                    <li data-value="2020" class="option">2020</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="group-select">
+                                            <div class="nice-select" tabindex="0">
+                                                <span class="current">RWD</span>
+                                                <ul class="list">
+                                                    <li data-value class="option selected">RWD</li>
+                                                    <li data-value="FWD" class="option">FWD</li>
+                                                    <li data-value="AWD" class="option">AWD</li>
+                                                    <li data-value="4WD" class="option">4WD</li>
+                                                    <li data-value="2WD" class="option"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Mileage" class="form-control" name="mileage" value="2500">
+                                </div>
+                                <div class="form-group">
+                                    <div class="group-select">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">Black</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">Black</li>
+                                                <li data-value="Red" class="option">Red</li>
+                                                <li data-value="White" class="option">White</li>
+                                                <li data-value="Yellow" class="option">Yellow</li>
+                                                <li data-value="Blue" class="option">Blue</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="engine-size" class="form-control" name="mileage"
+                                        value="Enter Engine Size">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="location" class="form-control" name="mileage"
+                                        value="Enter Location">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-9 listing-list-car-wrap">
+                        <form action="/" class="tf-my-listing-search">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="showing">Showing 1–12 of <span class="text-red">54</span> results</p>
+                                </div>
+                                <div class="col-md-6 toolbar-search-list">
+                                    <div class="group-select-recently">
+                                        <div class="nice-select" tabindex="0">
+                                            <span class="current">Recently Added</span>
+                                            <ul class="list">
+                                                <li data-value class="option selected">Recently Added</li>
+                                                <li data-value="new" class="option">New</li>
+                                                <li data-value="Recently Added" class="option">Recently Added</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-listing-all">
+                                <div class="condition-tab-wrap tf-search-condition-tab">
+                                    <div class="nav" id="nav-tab" role="tablist">
+                                        <a class=" btn-condition-filter active" id="all-tab" data-bs-toggle="tab"
+                                            data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">
+                                            All <span class="number-list">(100)</span>
+                                        </a>
+                                        <a class=" btn-condition-filter" id="new-tab" data-bs-toggle="tab"
+                                            data-bs-target="#new" role="tab" aria-controls="new" aria-selected="false">
+                                            New <span class="number-list">(29)</span>
+                                        </a>
+                                        <a class=" btn-condition-filter" id="used-tab" data-bs-toggle="tab"
+                                            data-bs-target="#used" role="tab" aria-controls="used"
+                                            aria-selected="false">
+                                            Used <span class="number-list">(29)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="toolbar-list">
+                                    <div class="form-group">
+                                        <a class="btn-display-listing-grid active">
+                                            <i class="icon-th-list"></i>
+                                        </a>
+                                    </div>
+                                    <div class="form-group">
+                                        <a class="btn-display-listing-list">
+                                            <i class="icon-line-height"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="tab-content" id="nav-listing-car">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab"
+                                tabindex="0">
+                                <div class="listing-list-car-grid ">
+                                    <div class="listing-grid-item">
+                                        <div class="listing-item-image">
+                                            <div class="hover-listing-image">
+                                                <div class="wrap-hover-listing">
+                                                    <div class="listing-item active" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car5.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car11.jpg"
+                                                                class="swiper-image lazy tfcl-light-gallery"
+                                                                alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car12.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                            <div class="overlay-limit">
+                                                                <img src="./assets/images/car-list/img.png"
+                                                                    class="icon-img" alt="icon-map">
+                                                                <p>2 more photos</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bullet-hover-listing">
+                                                        <div class="bl-item active"></div>
+                                                        <div class="bl-item"></div>
+                                                        <div class="bl-item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="icon-favorite">
+                                                <i class="icon-heart-1-1"></i>
+                                            </a>
+                                            <span class="feature">Featured</span>
+                                        </div>
+                                        <div class="listing-item-content">
+                                            <div class="listing-top-content">
+                                                <h6 class="title"><a href="#"><a href="#">Mercedez benz - c
+                                                            class</a></a></h6>
+                                                <div class="review-wrap">
+                                                    <div class="rating">
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                    </div>
+                                                    <span class="review">( 2 Reviews )</span>
+                                                </div>
+                                                <div class="description">
+                                                    <ul>
+                                                        <li class="listing-information fuel">
+                                                            <i class="icon-gasoline-pump-1"></i>
+                                                            <div class="inner">
+                                                                <span>Fuel type</span>
+                                                                <p>Petrol</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information size-engine">
+                                                            <i class="icon-Group1"></i>
+                                                            <div class="inner">
+                                                                <span>Mileage</span>
+                                                                <p>90 k.m</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information transmission">
+                                                            <i class="icon-gearbox-1"></i>
+                                                            <div class="inner">
+                                                                <span>Transmission</span>
+                                                                <p>Auto</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <ul class="list-controller">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-heart-1-1"></i>
+                                                            <span>Favorite</span>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-shuffle-2-11"></i>
+                                                            <span>Compare</span>
+                                                        </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="bottom-price-wrap">
+                                                <div class="price-wrap">
+                                                    <p class="price">$489</p>
+                                                    <p class="price-sale">$399</p>
+                                                </div>
+                                                <div class="btn-read-more">
+                                                    <a class="more-link" href="listing-details.html">
+                                                        <span>View details</span>
+                                                        <i class="icon-arrow-right2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tf-pagination">
+                                    <a class="prev page-numbers" href="#">
+                                        <i class="icon-3"></i>
+                                    </a>
+                                    <a class="page-numbers" href="#">1</a>
+                                    <a class="page-numbers active" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <a class="page-numbers" href="#">...</a>
+                                    <a class="next page-numbers" href="#">
+                                        <i class="icon--1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab" tabindex="0">
+                                <div class="listing-list-car-grid ">
+                                    <div class="listing-grid-item">
+                                        <div class="listing-item-image">
+                                            <div class="hover-listing-image">
+                                                <div class="wrap-hover-listing">
+                                                    <div class="listing-item active" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car5.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car11.jpg"
+                                                                class="swiper-image lazy tfcl-light-gallery"
+                                                                alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car12.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                            <div class="overlay-limit">
+                                                                <img src="./assets/images/car-list/img.png"
+                                                                    class="icon-img" alt="icon-map">
+                                                                <p>2 more photos</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bullet-hover-listing">
+                                                        <div class="bl-item active"></div>
+                                                        <div class="bl-item"></div>
+                                                        <div class="bl-item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="icon-favorite">
+                                                <i class="icon-heart-1-1"></i>
+                                            </a>
+                                            <span class="feature">Featured</span>
+                                        </div>
+                                        <div class="listing-item-content">
+                                            <div class="listing-top-content">
+                                                <h6 class="title"><a href="#"><a href="#">Mercedez benz - c
+                                                            class</a></a></h6>
+                                                <div class="review-wrap">
+                                                    <div class="rating">
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                    </div>
+                                                    <span class="review">( 2 Reviews )</span>
+                                                </div>
+                                                <div class="description">
+                                                    <ul>
+                                                        <li class="listing-information fuel">
+                                                            <i class="icon-gasoline-pump-1"></i>
+                                                            <div class="inner">
+                                                                <span>Fuel type</span>
+                                                                <p>Petrol</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information size-engine">
+                                                            <i class="icon-Group1"></i>
+                                                            <div class="inner">
+                                                                <span>Mileage</span>
+                                                                <p>90 k.m</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information transmission">
+                                                            <i class="icon-gearbox-1"></i>
+                                                            <div class="inner">
+                                                                <span>Transmission</span>
+                                                                <p>Auto</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <ul class="list-controller">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-heart-1-1"></i>
+                                                            <span>Favorite</span>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-shuffle-2-11"></i>
+                                                            <span>Compare</span>
+                                                        </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="bottom-price-wrap">
+                                                <div class="price-wrap">
+                                                    <p class="price">$489</p>
+                                                    <p class="price-sale">$399</p>
+                                                </div>
+                                                <div class="btn-read-more">
+                                                    <a class="more-link" href="listing-details.html">
+                                                        <span>View details</span>
+                                                        <i class="icon-arrow-right2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tf-pagination">
+                                    <a class="prev page-numbers" href="#">
+                                        <i class="icon-3"></i>
+                                    </a>
+                                    <a class="page-numbers" href="#">1</a>
+                                    <a class="page-numbers active" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <a class="page-numbers" href="#">...</a>
+                                    <a class="next page-numbers" href="#">
+                                        <i class="icon--1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="used" role="tabpanel" aria-labelledby="used-tab"
+                                tabindex="0">
+                                <div class="listing-list-car-grid ">
+                                    <div class="listing-grid-item">
+                                        <div class="listing-item-image">
+                                            <div class="hover-listing-image">
+                                                <div class="wrap-hover-listing">
+                                                    <div class="listing-item active" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car5.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car11.jpg"
+                                                                class="swiper-image lazy tfcl-light-gallery"
+                                                                alt="images">
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
+                                                        <div class="images">
+                                                            <img src="./assets/images/car-list/car12.jpg"
+                                                                class="swiper-image tfcl-light-gallery" alt="images">
+                                                            <div class="overlay-limit">
+                                                                <img src="./assets/images/car-list/img.png"
+                                                                    class="icon-img" alt="icon-map">
+                                                                <p>2 more photos</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bullet-hover-listing">
+                                                        <div class="bl-item active"></div>
+                                                        <div class="bl-item"></div>
+                                                        <div class="bl-item"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="icon-favorite">
+                                                <i class="icon-heart-1-1"></i>
+                                            </a>
+                                            <span class="feature">Featured</span>
+                                        </div>
+                                        <div class="listing-item-content">
+                                            <div class="listing-top-content">
+                                                <h6 class="title"><a href="#"><a href="#">Mercedez benz - c
+                                                            class</a></a></h6>
+                                                <div class="review-wrap">
+                                                    <div class="rating">
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                        <i class="icon-Vector3"></i>
+                                                    </div>
+                                                    <span class="review">( 2 Reviews )</span>
+                                                </div>
+                                                <div class="description">
+                                                    <ul>
+                                                        <li class="listing-information fuel">
+                                                            <i class="icon-gasoline-pump-1"></i>
+                                                            <div class="inner">
+                                                                <span>Fuel type</span>
+                                                                <p>Petrol</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information size-engine">
+                                                            <i class="icon-Group1"></i>
+                                                            <div class="inner">
+                                                                <span>Mileage</span>
+                                                                <p>90 k.m</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="listing-information transmission">
+                                                            <i class="icon-gearbox-1"></i>
+                                                            <div class="inner">
+                                                                <span>Transmission</span>
+                                                                <p>Auto</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <ul class="list-controller">
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-heart-1-1"></i>
+                                                            <span>Favorite</span>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="icon-shuffle-2-11"></i>
+                                                            <span>Compare</span>
+                                                        </a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="bottom-price-wrap">
+                                                <div class="price-wrap">
+                                                    <p class="price">$489</p>
+                                                    <p class="price-sale">$399</p>
+                                                </div>
+                                                <div class="btn-read-more">
+                                                    <a class="more-link" href="listing-details.html">
+                                                        <span>View details</span>
+                                                        <i class="icon-arrow-right2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tf-pagination">
+                                    <a class="prev page-numbers" href="#">
+                                        <i class="icon-3"></i>
+                                    </a>
+                                    <a class="page-numbers" href="#">1</a>
+                                    <a class="page-numbers active" href="#">2</a>
+                                    <a class="page-numbers" href="#">3</a>
+                                    <a class="page-numbers" href="#">...</a>
+                                    <a class="next page-numbers" href="#">
+                                        <i class="icon--1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /#page -->
+
 {% endblock car %}

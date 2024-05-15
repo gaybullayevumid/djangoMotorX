@@ -1,9 +1,198 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block home %}
+
 <!-- /#page -->
 <div id="wrapper">
     <div id="page" class="clearfix">
+        <!-- Main Header -->
+        <header id="header3" class="main-header header header-fixed ">
+            <!-- Header Lower -->
+            <div class="top-bar">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <ul class="list-infor-topbar">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-Group-11"></i>
+                                        <p>Hot Line: +1 800 123 456 789</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-Group3"></i>
+                                        <p>Mail Us: your_protect@mail.com</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="icon-topbar">
+                                <li>
+                                    <a href="#"><i class="icon-6"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-4"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-5"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-7"></i></a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-lower">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-style2 flex justify-space align-center">
+                                <!-- Logo Box -->
+                                <div class="logo-box flex">
+                                    <div class="logo"><a href="index.html"><img src="assets/images/logo/logo2@.png"
+                                                alt="Logo"></a></div>
+                                </div>
+                                <div class="nav-outer flex align-center">
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu show navbar-expand-md">
+                                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                            <ul class="navigation clearfix">
+                                                <li class="current">
+                                                    <a href="{% url 'home' %}">Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{% url 'car_list' %}">Cars</a>
+                                                </li>
+                                                <li class="dropdown2">
+                                                    <a href="#">Page</a>
+                                                    <ul>
+                                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                                        <li><a href="my-inventory.html">My Inventory</a></li>
+                                                        <li><a href="addcart.html">Add car</a></li>
+                                                        <li><a href="seller-profile.html">Seller Profile</a></li>
+                                                        <li><a href="dealer-details.html">Dealer Detail</a></li>
+                                                        <li><a href="404.html">404</a></li>
+                                                    </ul>
+
+                                                </li>
+                                                <li><a href="{% url 'news' %}">News </a>
+                                                </li>
+                                                <li><a href="{% url 'contact' %}">Contact us </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <!-- Main Menu End-->
+                                </div>
+                                <div class="header-account flex align-center">
+                                    <div class="register ml--18">
+                                        <div class="flex align-center">
+                                            <a data-bs-toggle="modal" href="#exampleModalToggle"
+                                                role="button">Register</a>
+                                            <a data-bs-toggle="modal" href="#exampleModalToggle2"
+                                                role="button">Login</a>
+                                        </div>
+                                    </div>
+                                    <div class="flat-bt-top sc-btn-top ml--20 ">
+                                        <a class="btn-icon-list" href="car-list.html">
+                                            <span>Listing Yours</span>
+                                            <i class="icon-add-button-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mobile-nav-toggler mobile-button">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Lower -->
+            <!-- Mobile Menu  -->
+            <div class="close-btn"><span class="icon flaticon-cancel-1"></span></div>
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <nav class="menu-box">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="assets/images/logo/logo2@.png" alt="Logo Motorx"></a>
+                    </div>
+                    <div class="bottom-canvas">
+                        <div class="menu-outer">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown2 current">
+                                    <a href="#">Home</a>
+                                    <ul>
+                                        <li class="current"><a href="index.html">Home Page 01</a>
+                                        </li>
+                                        <li><a href="home02.html">Home Page 02</a></li>
+                                        <li><a href="home03.html">Home Page 03</a></li>
+                                        <li><a href="home04.html">Home Page 04</a></li>
+                                        <li><a href="home05.html">Home Page 05</a></li>
+                                        <li><a href="home06.html">Home Page 06</a></li>
+                                    </ul>
+                                    <div class="dropdown2-btn"></div>
+                                </li>
+                                <li class="dropdown2">
+                                    <a href="#">Cars</a>
+                                    <ul>
+                                        <li><a href="car-list.html">Car Listings</a></li>
+                                        <li><a href="listing-details.html">Listing Details</a></li>
+                                    </ul>
+                                    <div class="dropdown2-btn"></div>
+                                </li>
+                                <li class="dropdown2">
+                                    <a href="#">Page</a>
+                                    <ul>
+                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                        <li><a href="my-inventory.html">My Inventory</a></li>
+                                        <li><a href="addcart.html">Add Car</a></li>
+                                        <li><a href="seller-profile.html">Seller Profile</a></li>
+                                        <li><a href="dealer-details.html">Dearer Details</a></li>
+                                        <li><a href="404.html">404</a></li>
+                                    </ul>
+                                    <div class="dropdown2-btn"></div>
+                                </li>
+                                <li class="dropdown2">
+                                    <a href="#">News </a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog List</a></li>
+                                        <li><a href="blog-single.html">Blog Detail</a></li>
+                                    </ul>
+                                    <div class="dropdown2-btn"></div>
+                                </li>
+                                <li><a href="contact-us.html">Contact Us</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="help-bar-mobie login-box">
+                            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="fw-7 category"><i
+                                    class="icon-user"></i>Login</a>
+                        </div>
+                        <div class="help-bar-mobie search">
+                            <a href="#" class="fw-7 font-2"><i class="icon-loupe-1"></i>Search</a>
+                        </div>
+                        <div class="help-bar-mobie compare">
+                            <a href="#" class="fw-7 font-2"><i class="icon-shuffle-2-1"></i>Compare</a>
+                        </div>
+                        <div class="help-bar-mobie cart">
+                            <a href="#" class="fw-7 font-2"><i class="icon-Vector"></i>Cart</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+
+        </header>
+        <!-- End Main Header -->
+
         <!-- Slide -->
         <div class="widget-tf-slider ">
             <div class="slider-wrap swiper-wrapper">
@@ -452,7 +641,7 @@
                                     </div>
                                     <div class="bottom-btn-wrap">
                                         <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
+                                            <a class="more-link" href="{% url 'car_detail' %}">
                                                 <span>View details</span>
                                                 <i class="icon-arrow-right2"></i>
                                             </a>
@@ -578,526 +767,6 @@
 
                                 </div>
                             </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car2.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car3.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car4.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car5.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car6.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                         <!-- Widget Car Service -->
                     </div>
@@ -1131,526 +800,6 @@
                                                 <div class="listing-item active" title="Lexus LC Hybrid 2024">
                                                     <div class="images">
                                                         <img src="./assets/images/car-list/car1.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car2.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car3.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car4.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car5.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car11.jpg"
-                                                            class="swiper-image lazy tfcl-light-gallery" alt="images">
-                                                    </div>
-                                                </div>
-                                                <div class="listing-item view-gallery" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car12.jpg"
-                                                            class="swiper-image tfcl-light-gallery" alt="images">
-                                                        <div class="overlay-limit">
-                                                            <img src="./assets/images/car-list/img.png" class="icon-img"
-                                                                alt="icon-map">
-                                                            <p>2 more photos</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="bullet-hover-listing">
-                                                    <div class="bl-item active"></div>
-                                                    <div class="bl-item"></div>
-                                                    <div class="bl-item"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="content">
-                                    <span class="sub-title">Mini Cooper 3 Similar</span>
-                                    <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a></h6>
-                                    <span class="price">$27,000</span>
-                                    <div class="description">
-                                        <ul>
-                                            <li class="listing-information fuel">
-                                                <i class="icon-gasoline-pump-1"></i>
-                                                <div class="inner">
-                                                    <span>Fuel type</span>
-                                                    <p>Petrol</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information size-engine">
-                                                <i class="icon-Group1"></i>
-                                                <div class="inner">
-                                                    <span>Mileage</span>
-                                                    <p>90 k.m</p>
-                                                </div>
-                                            </li>
-                                            <li class="listing-information transmission">
-                                                <i class="icon-gearbox-1"></i>
-                                                <div class="inner">
-                                                    <span>Transmission</span>
-                                                    <p>Auto</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bottom-btn-wrap">
-                                        <div class="btn-read-more">
-                                            <a class="more-link" href="listing-details.html">
-                                                <span>View details</span>
-                                                <i class="icon-arrow-right2"></i>
-                                            </a>
-                                        </div>
-                                        <div class="btn-group">
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-shuffle-2-11"></i>
-                                            </a>
-                                            <a href="#" class="icon-service">
-                                                <i class="icon-heart-1-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="tf-car-service">
-                                <a href="listing-details.html" class="image">
-                                    <div class="stm-badge-top">
-                                        <div class="feature">
-                                            <span>Featured</span>
-                                            <div class="cut">
-                                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M12.296 14.0939C13.9707 14.0939 15.3284 12.8164 15.3284 11.2406C15.3284 9.66468 13.9707 8.38718 12.296 8.38718C10.6213 8.38718 9.26367 9.66468 9.26367 11.2406C9.26367 12.8164 10.6213 14.0939 12.296 14.0939Z"
-                                                        fill="white"></path>
-                                                    <path
-                                                        d="M9.45163 2.32436L7.71751 4.10772H4.71358C3.67121 4.10772 2.81836 4.91023 2.81836 5.89108V16.5913C2.81836 17.5721 3.67121 18.3746 4.71358 18.3746H19.8754C20.9177 18.3746 21.7706 17.5721 21.7706 16.5913V5.89108C21.7706 4.91023 20.9177 4.10772 19.8754 4.10772H16.8714L15.1373 2.32436H9.45163ZM12.2945 15.6996C9.67906 15.6996 7.55641 13.7022 7.55641 11.2412C7.55641 8.78013 9.67906 6.78276 12.2945 6.78276C14.9099 6.78276 17.0325 8.78013 17.0325 11.2412C17.0325 13.7022 14.9099 15.6996 12.2945 15.6996Z"
-                                                        fill="white"></path>
-                                                </svg>
-                                                <p>5</p>
-                                            </div>
-                                        </div>
-                                        <span>2023</span>
-
-                                    </div>
-                                    <div class="listing-images">
-                                        <div class="hover-listing-image">
-                                            <div class="wrap-hover-listing">
-                                                <div class="listing-item active" title="Lexus LC Hybrid 2024">
-                                                    <div class="images">
-                                                        <img src="./assets/images/car-list/car6.jpg"
                                                             class="swiper-image tfcl-light-gallery" alt="images">
                                                     </div>
                                                 </div>
@@ -1928,67 +1077,6 @@
                                         </div>
                                         <div class="thumb">
                                             <img src="assets/images/cart-service/1.jpg" class="img-responsive"
-                                                alt="Image Car Service">
-                                        </div>
-                                    </a>
-                                    <div class="content">
-                                        <span class="sub-title">Mini Cooper 3 Similar</span>
-                                        <h6 class="title"><a href="listing-details.html">Chevrolet Suburban 2021 mo</a>
-                                        </h6>
-                                        <div class="description">
-                                            <ul>
-                                                <li class="listing-information fuel">
-                                                    <i class="icon-gasoline-pump-1"></i>
-                                                    <div class="inner">
-                                                        <span>Fuel type</span>
-                                                        <p>Petrol</p>
-                                                    </div>
-                                                </li>
-                                                <li class="listing-information size-engine">
-                                                    <i class="icon-Group1"></i>
-                                                    <div class="inner">
-                                                        <span>Mileage</span>
-                                                        <p>90 k.m</p>
-                                                    </div>
-                                                </li>
-                                                <li class="listing-information transmission">
-                                                    <i class="icon-gearbox-1"></i>
-                                                    <div class="inner">
-                                                        <span>Transmission</span>
-                                                        <p>Auto</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="bottom-btn-wrap">
-                                            <div class="price-group">
-                                                <span class="price-sale">$3958</span>
-                                                <span class="price">$7894</span>
-
-                                            </div>
-                                            <div class="btn-group">
-                                                <a href="#" class="icon-service">
-                                                    <i class="icon-heart-1-1"></i>
-                                                </a>
-                                                <a href="#" class="icon-service">
-                                                    <i class="icon-shuffle-2-11"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-xl-6">
-                                <div class="tf-car-service-v2">
-                                    <a href="listing-details.html" class="image">
-                                        <div class="stm-badge-top">
-                                            <div class="feature-group">
-                                                <span class="featured">Featured</span>
-                                                <span class="year">2023</span>
-                                            </div>
-                                        </div>
-                                        <div class="thumb">
-                                            <img src="assets/images/cart-service/2.jpg" class="img-responsive"
                                                 alt="Image Car Service">
                                         </div>
                                     </a>
@@ -3158,23 +2246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="tf-car-banner car-bg-black">
-                            <div class="group-content">
-                                <h3 class="heading">Are you looking for buy a new car</h3>
-                                <div class="btn-read-more">
-                                    <a class="more-link" href="#">
-                                        <span>View details</span>
-                                        <i class="icon-arrow-right2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="group-image">
-                                <div class="shape1"></div>
-                                <img src="./assets/images/banner/c1.png" alt="car01" class="car">
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -3195,86 +2267,6 @@
                             </div>
                             <a href="blog-single.html">
                                 <img src="assets/images/blog/wg1.jpg" alt="image">
-                            </a>
-                        </div><!-- /.feature-post -->
-                        <div class="main-post">
-                            <div class="entry-meta">
-                                <span class="author">
-                                    <img src="assets/images/avatar/avt-blog.png" alt="">
-                                    <a href="#">Mehedii .H</a>
-                                </span>
-                                <span class="comment">
-                                    <i class="icon-2"></i>
-                                    <a href="#">Coments (03)</a>
-                                </span>
-                            </div>
-                            <h2 class="entry-title">
-                                <a href="blog-single.html">FIVE WAYS THAT CAN DEVELOP YOUR BUSINESS</a>
-                            </h2>
-                            <p class="entry-des">The time it takes to paint a car repair depen</p>
-                            <div class="btn-read-more">
-                                <a class="more-link" href="blog-single.html">
-                                    <span>Read MOre</span>
-                                    <i class="icon-Arrow-1"></i>
-                                </a>
-                            </div>
-
-                            <!-- /.entry-meta -->
-                        </div><!-- /.main-post -->
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="widget-blog bl-v1">
-                        <div class="feature-post">
-                            <div class="category">
-                                <ul class="flex">
-                                    <li>
-                                        <a href="#"><i class="icon-Group-12"></i>Business</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="blog-single.html">
-                                <img src="assets/images/blog/wg2.jpg" alt="image">
-                            </a>
-                        </div><!-- /.feature-post -->
-                        <div class="main-post">
-                            <div class="entry-meta">
-                                <span class="author">
-                                    <img src="assets/images/avatar/avt-blog.png" alt="">
-                                    <a href="#">Mehedii .H</a>
-                                </span>
-                                <span class="comment">
-                                    <i class="icon-2"></i>
-                                    <a href="#">Coments (03)</a>
-                                </span>
-                            </div>
-                            <h2 class="entry-title">
-                                <a href="blog-single.html">FIVE WAYS THAT CAN DEVELOP YOUR BUSINESS</a>
-                            </h2>
-                            <p class="entry-des">The time it takes to paint a car repair depen</p>
-                            <div class="btn-read-more">
-                                <a class="more-link" href="blog-single.html">
-                                    <span>Read MOre</span>
-                                    <i class="icon-Arrow-1"></i>
-                                </a>
-                            </div>
-
-                            <!-- /.entry-meta -->
-                        </div><!-- /.main-post -->
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="widget-blog bl-v1">
-                        <div class="feature-post">
-                            <div class="category">
-                                <ul class="flex">
-                                    <li>
-                                        <a href="#"><i class="icon-Group-12"></i>Business</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="blog-single.html">
-                                <img src="assets/images/blog/wg3.jpg" alt="image">
                             </a>
                         </div><!-- /.feature-post -->
                         <div class="main-post">

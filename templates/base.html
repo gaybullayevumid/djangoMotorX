@@ -31,13 +31,16 @@
         </div>
     </div>
     <!-- /preload -->
+    
 
-    <div>
-        {% include 'layouts/header.html' %}
         {% block home %}{% endblock home %}
+        {% include 'layouts/header.html' %}
         {% block car %}{% endblock car %}
+        {% block car_detail %}{% endblock car_detail %}
+        {% block news %}{% endblock news %}
+        {% block contact %}{% endblock contact %}
         {% include 'layouts/footer.html' %}
-    </div>
+    
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
