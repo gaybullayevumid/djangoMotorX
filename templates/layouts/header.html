@@ -1,3 +1,4 @@
+{% load static %}
 <!-- Main Header -->
 <header id="header" class="main-header header header-fixed ">
     <!-- Header Lower -->
@@ -8,7 +9,7 @@
                     <div class="inner-container flex justify-space align-center">
                         <!-- Logo Box -->
                         <div class="logo-box flex">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logo/logo2@.png"
+                            <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo/logo2@.png' %}"
                                         alt="Logo"></a></div>
                         </div>
                         <div class="nav-outer flex align-center">

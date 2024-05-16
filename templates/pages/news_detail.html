@@ -1,0 +1,381 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block news_detail %}
+
+    <!-- /#page -->
+    <div id="wrapper">
+        <div id="page" class="clearfix">
+            <!-- Main Page Title -->
+            <div class="tf-page-title mt-10">
+                <div class="themesflat-container full">
+                    <div class="page-title t-al-center">
+                        <span>Save up to 15%</span>
+                        <h1 class="main-title">Blog Details</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Content Blog -->
+            <section class="flat-blog-list main-content">
+                <div class="themesflat-container w1320">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="post-wrap">
+                                <article class="entry format-standard-details">
+                                    {% if post.image %}
+                                    <img src="{{post.image.url}}" alt="image" class="imge-blog-details mb-25">
+                                    {% endif %}
+                                    <div class="entry-meta horizontal">
+                                        <span class="author line"><i class=" icon-1"></i><a href="#">{{ post.created_on | date:'d M Y' }}
+                                            </a></span>
+                                        <span class="comment line"><i class="icon-2"></i><a href="#">Coments
+                                                (03)</a></span>
+                                        <span class="time line"><i class="icon-uniE971"></i><a href="#">3 min
+                                                Read</a></span>
+                                    </div>
+                                    <h2 class="entry-title mb-20">
+                                        <a href="#">{{ post.title }}</a>
+                                    </h2>
+                                    <p class="mb-6">{{ post.body }}</p>
+                                    <p class="mb-30">We have covered many special events such as fireworks, fairs,
+                                        parades, races, walks, awards ceremonies,
+                                        fashion shows, sporting events, and even a memorial service.</p>
+                                </article>
+                                <blockquote class="text-box-blog">
+                                    <p>Your time is limited, so don’t waste it living someone else’s life.
+                                        Don’t be trapped by dogma – which is living with the results</p>
+                                    <span>John Mehedii</span>
+                                    <i class="icon-Group-21081"></i>
+                                </blockquote>
+                                <h3>Let our investment management team</h3>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <ul class="icon-list mt-12 ">
+                                            <li class="flex align-center">
+                                                <i class="icon-Check"></i>
+                                                <p>Lorem Ipsum generators on the tend to repeat.</p>
+                                            </li>
+                                            <li class="flex align-center">
+                                                <i class="icon-Check"></i>
+                                                <p> If you are going to use a passage.</p>
+                                            </li>
+                                            <li class="flex align-center">
+                                                <i class="icon-Check"></i>
+                                                <p>Lorem Ipsum generators on the tend to repeat.</p>
+                                            </li>
+                                            <li class="flex align-center">
+                                                <i class="icon-Check"></i>
+                                                <p> Lorem Ipsum generators on the tend to repeat.</p>
+                                            </li>
+                                            <li class="flex align-center">
+                                                <i class="icon-Check"></i>
+                                                <p> If you are going to use a passage.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 imgae-list">
+                                        <img src="assets/images/blog/details.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="quote t-al-center">“Amazing Beach Scenery & Relaxing Ocean Sounds”</div>
+                                <p>We have covered many special events such as fireworks, fairs, parades, races, walks,
+                                    awards
+                                    ceremonies, fashion shows, sporting events, and even a memorial service.Lorem ipsum
+                                    dolor
+                                    sit amet, consectetur adipiscing elit. vestibulum rhoncus, dolor eget viverra
+                                    pretium, dolor
+                                    ellus aliquet nunc,
+                                </p>
+                                <div class="tag-wrap">
+                                    <div class="tags-box">
+                                        <div class="flex align-center ">
+                                            <p>Tag:</p>
+                                            <div class="flex fs-13 fw-6 tags_cloud_inner">
+                                                <a href="#" class="text-up active">Business</a>
+                                                <a href="#" class="text-up">Design</a>
+                                                <a href="#" class="text-up">apps</a>
+                                                <a href="#" class="text-up">data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share-box flex align-center">
+                                        <p>Share:</p>
+                                        <ul class="social-icon icon-share">
+                                            <li>
+                                                <a href="#"><i class="icon-6"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon-4"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon-5"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icon-7"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="wrap-review w-671">
+                                    <h3 class="mb-36">Post Author</h3>
+                                    <div class="comment-list">
+                                        <ol>
+                                            <li class="flex">
+                                                <div class="images">
+                                                    <img src="assets/images/avatar/avt-review.jpg" alt="images">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="title-item flex align-center">
+                                                        <h4>Rohan De Spond</h4>
+                                                        <p>25 jan 2021</p>
+                                                    </div>
+                                                    <div class="start-wrap flex align-center">
+                                                        <span>very awesome & Comfort</span>
+                                                        <div class="star flex">
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                        </div>
+                                                        <span class="number-revivew">5.0</span>
+                                                    </div>
+                                                    <p class="texts text-color-2">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit.Curabitur have is
+                                                        covered many vulputate vestibulum Phasellus rhoncus, dolor eget
+                                                        viverra
+                                                        pretium dolor tellus aliquet nunc, vitae ultricies erat elit eu
+                                                        lacus. Vestibul
+                                                        non justo consectetur, cursus ante, tincidunt sapien. Nulla quis
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="flex">
+                                                <div class="images">
+                                                    <img src="assets/images/avatar/avt-review.jpg" alt="images">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="title-item flex align-center">
+                                                        <h4>Rohan De Spond</h4>
+                                                        <p>25 jan 2021</p>
+                                                    </div>
+                                                    <div class="start-wrap flex align-center">
+                                                        <span>very awesome & Comfort</span>
+                                                        <div class="star flex">
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                            <i class="icon-Vector3"></i>
+                                                        </div>
+                                                        <span class="number-revivew">5.0</span>
+                                                    </div>
+                                                    <p class="texts text-color-2">Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit.Curabitur have is
+                                                        covered many vulputate vestibulum Phasellus rhoncus, dolor eget
+                                                        viverra
+                                                        pretium dolor tellus aliquet nunc, vitae ultricies erat elit eu
+                                                        lacus. Vestibul
+                                                        non justo consectetur, cursus ante, tincidunt sapien. Nulla quis
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                                <div class="wrap-contact w-671">
+                                    <h3 class="mb-36">leave a Comment</h3>
+                                    <div class="comments">
+                                        <div class="respond-comment">
+                                            <form method="post" id="contactform" class="comment-form form-submit"
+                                                action="/" accept-charset="utf-8" novalidate="novalidate">
+                                                <fieldset class="form-cm flex">
+                                                    <i class="icon-user-1-1"></i>
+                                                    <input type="text" class="my-input" name="text"
+                                                        placeholder="Your Name*" required="">
+                                                </fieldset>
+                                                <fieldset class="form-cm flex">
+                                                    <i class="icon-Group2"></i>
+                                                    <input type="email" class="my-input" name="email"
+                                                        placeholder="Email Address*" required="">
+                                                </fieldset>
+                                                <fieldset class="form-cm flex">
+                                                    <i class="icon-edit-1"></i>
+                                                    <textarea id="comment-message" name="message" rows="4" tabindex="4"
+                                                        placeholder="Write review" aria-required="true"></textarea>
+                                                </fieldset>
+                                                <div class="flex check-box">
+                                                    <div class="radio">
+                                                        <input id="front-agree" type="checkbox" name="check"
+                                                            value="check">
+                                                        <label for="front-agree">I agree that my submitted data is being
+                                                            collected and stored. *</label>
+                                                    </div>
+
+                                                </div>
+                                                <button class="button-fr" name="submit" type="submit">
+                                                    Leave A Comment
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <aside class="side-blog">
+                                <div class="inner-side-bar pl-30">
+                                    <div class="widget widget-user t-al-center">
+                                        <div class="content-user">
+                                            <img src="assets/images/avatar/avt-blog.jpg" alt="">
+                                            <h4>Rosalina D. Willaim</h4>
+                                            <span>Blogger/Photographer</span>
+                                            <p>he whimsically named Egg Canvas is the design director and photographer
+                                                in New York. Why the nam</p>
+                                            <div class="social-blog-dt">
+                                                <ul>
+                                                    <li>
+                                                        <a href=""><i class="icon-6"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href=""><i class="icon-4"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href=""><i class="icon-5"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href=""><i class="icon-7"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget widget-search ">
+                                        <h3 class="widget-title">
+                                            search here
+                                        </h3>
+                                        <form role="search" method="get" class="search-form" action="/">
+                                            <label>
+                                                <input type="search" value="" name="s" class="s"
+                                                    placeholder="Search here...">
+                                            </label>
+                                            <button type="submit" class="search-submit"><i
+                                                    class="icon-search-1"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="widget widget-recent">
+                                        <h3 class="widget-title ">
+                                            search here
+                                        </h3>
+                                        <div class="recent-post-list">
+                                            <div class="list-recent">
+                                                <div class="recent-image">
+                                                    <a href="#">
+                                                        <img src="assets/images/blog/1.jpg" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="recent-info">
+                                                    <div class="meta">
+                                                        <i class="icon-1"></i>
+                                                        <span>Jan 23,2022</span>
+                                                    </div>
+                                                    <h4 class="title">
+                                                        <a href="#">Budget Issues Force The Our To Become</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="list-recent">
+                                                <div class="recent-image">
+                                                    <a href="#">
+                                                        <img src="assets/images/blog/2.jpg" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="recent-info">
+                                                    <div class="meta">
+                                                        <i class="icon-1"></i>
+                                                        <span>Jan 23,2022</span>
+                                                    </div>
+                                                    <h4 class="title">
+                                                        <a href="#">The Best Products That Shape Fashion</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="list-recent">
+                                                <div class="recent-image">
+                                                    <a href="#">
+                                                        <img src="assets/images/blog/3.jpg" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="recent-info">
+                                                    <div class="meta">
+                                                        <i class="icon-1"></i>
+                                                        <span>Jan 23,2022</span>
+                                                    </div>
+                                                    <h4 class="title">
+                                                        <a href="#">The Best Products That Shape Fashion</a>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="widget widget-categories">
+                                        <h3 class="widget-title ">
+                                            Catagories
+                                        </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="category">
+                                                    <span>Graphic Design</span>
+                                                    <div class="number-category">03</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="category active">
+                                                    <span>Web Development</span>
+                                                    <div class="number-category">03</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="category">
+                                                    <span>Digital Marketing</span>
+                                                    <div class="number-category">03</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="category">
+                                                    <span> UI/UX Development</span>
+                                                    <div class="number-category">03</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget widget-tags">
+                                        <h3 class="widget-title ">
+                                            Catagories
+                                        </h3>
+                                        <div class="tags_cloud_inner">
+                                            <a href="#">Design</a>
+                                            <a href="#">marketing</a>
+                                            <a href="#">search</a>
+                                            <a href="#">branding</a>
+                                            <a href="#">startup</a>
+                                            <a href="#">tech</a>
+                                            <a href="#" class="active">landing </a>
+                                            <a href="#">coding</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content Blog -->
+        </div>
+    </div>
+    <!-- /#page -->
+
+{% endblock news_detail %}

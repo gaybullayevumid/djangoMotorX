@@ -23,6 +23,7 @@
                     <div class="col-lg-8">
                         <div class="flat-blog">
                             <article class="entry format-standard">
+                                {% for post in posts %}
                                 <div class="feature-post">
                                     <div class="category">
                                         <ul class="flex">
@@ -31,34 +32,34 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="assets/images/blog/bl1.jpg" alt="image">
+                                    {% if post.image %}
+                                    <img src="{{post.image.url}}" alt="image">
+                                    {% endif %}
                                 </div><!-- /.feature-post -->
 
+                                
                                 <div class="main-post">
                                     <div class="entry-meta">
-                                        <span class="author line"><i class="icon-user"></i><a href="#">Mehedii
-                                                .Ha</a></span>
+                                        <span class="author line"><i class="icon-user"></i><a href="#">{{ post.author }}</a></span>
                                         <span class="comment line"><i class="icon-2"></i><a href="#">Coments
                                                 (03)</a></span>
-                                        <span class="time line"><i class="icon-uniE971"></i><a href="#">3 min
-                                                Read</a></span>
+                                        <span class="time line"><i class="icon-uniE971"></i><a href="#">{{ post.created_on | date:'m' }}
+                                               min Read</a></span>
                                     </div>
                                     <h2 class="entry-title">
-                                        <a href="blog-single.html">Title </a>
+                                        <a href="{% url 'car_detail' %}">{{post.title}} </a>
                                     </h2>
-                                    <p class="entry-des">There are many variations of passages of Lorem Ipsum
-                                        available, but majority have suffered
-                                        teration in some form, by injected humour, or randomised words which don't
-                                        look even slight
-                                        believable. If you are going to use a passage of Lorem Ipsum.</p>
+                                    <p class="entry-des">{{ post.body | slice:'200'}}</p>
                                     <div class="btn-read-more">
-                                        <a class="more-link" href="blog-single.html">
+                                        <a class="more-link" href="{% url 'news_detail' post.pk %}">
                                             <span>Read MOre</span>
                                             <i class="icon-Path-90148"></i>
                                         </a>
                                     </div>
                                     <!-- /.entry-meta -->
+
                                 </div><!-- /.main-post -->
+                                {% endfor %}
                             </article>
                         </div>
                         <div class="tf-pagination mt-60">
