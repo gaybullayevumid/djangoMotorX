@@ -68,9 +68,11 @@
                                 <i class="icon-3"></i>
                             </a>
                             {% endif %}
-                            <a class="page-numbers" href="#">{{ post.page_number }}</a>
+                            {% for page in page_number %}
+                            <a class="page-numbers">{{ page.num_pages }}</a>
+                            {% endfor %}
                             {%if posts.has_next%}
-                            <a class="next page-numbers" href="?page={{post.next_page_number}}">
+                            <a class="next page-numbers" href="?page={{posts.next_page_number}}">
                                 <i class="icon--1"></i>
                             </a>
                             {%endif%}

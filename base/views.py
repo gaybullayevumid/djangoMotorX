@@ -20,6 +20,7 @@ def newsPageView(request):
     posts = Post.objects.all()
     p = Paginator(posts, 3)
     page_number = request.GET.get('page')
+    # page_number = p.num_pages * "p"
     try:
         posts = p.get_page(page_number)  # returns the desired page object
     except PageNotAnInteger:
@@ -29,7 +30,7 @@ def newsPageView(request):
         # if page is empty then return last page
         posts = p.page(p.num_pages)
     context = {'posts': posts}
-    return render(request=request, template_name=template_name, context=context,)
+    return render(request=request, template_name=template_name, context=context)
 
 def newsDetailView(request, pk):
     template_name = 'pages/news_detail.html'
