@@ -63,16 +63,17 @@
                             </article>
                         </div>
                         <div class="tf-pagination mt-60">
-                            <a class="prev page-numbers" href="#">
+                            {%if posts.has_previous %} 
+                            <a class="prev page-numbers" href="?page={{posts.previous_page_number}}">
                                 <i class="icon-3"></i>
                             </a>
-                            <a class="page-numbers" href="#">1</a>
-                            <a class="page-numbers active" href="#">2</a>
-                            <a class="page-numbers" href="#">3</a>
-                            <a class="page-numbers" href="#">...</a>
-                            <a class="next page-numbers" href="#">
+                            {% endif %}
+                            <a class="page-numbers" href="#">{{ post.page_number }}</a>
+                            {%if posts.has_next%}
+                            <a class="next page-numbers" href="?page={{post.next_page_number}}">
                                 <i class="icon--1"></i>
                             </a>
+                            {%endif%}
                         </div>
                     </div>
                     <div class="col-lg-4" >
