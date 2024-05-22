@@ -1,15 +1,21 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Post
+from .models import Post, Product
 
 # Create your views here.
 
 class HomePageView(TemplateView):
     template_name = 'pages/home.html'
 
-class CarPageView(TemplateView):
+# class CarPageView(TemplateView):
+#     template_name = 'pages/car_list.html'
+
+def carPageView(request):
     template_name = 'pages/car_list.html'
+    cars = Product.objects.all()
+    context = {'cars':cars}
+    return render(request=request, template_name=template_name, context=context)
 
 
 class CarDetailView(TemplateView):

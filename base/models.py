@@ -12,7 +12,17 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta:
-        verbose_name_plural = 'postlar'
 
-    
+class Product(models.Model):
+    name = models.CharField(max_length=100)
+    reviews = models.PositiveIntegerField(default=0)
+    rating = models.DecimalField(max_digits=3, decimal_places=2)
+    fuel_type = models.CharField(max_length=50)
+    mileage = models.DecimalField(max_digits=6, decimal_places=1)
+    transmission = models.CharField(max_length=50)
+    original_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    discounted_price = models.DecimalField(max_digits=10, decimal_places=2)
+    is_available = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name

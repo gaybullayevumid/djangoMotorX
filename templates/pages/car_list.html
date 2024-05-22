@@ -255,6 +255,7 @@
                             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab"
                                 tabindex="0">
                                 <div class="listing-list-car-grid ">
+                                    {% for car in cars %}
                                     <div class="listing-grid-item">
                                         <div class="listing-item-image">
                                             <div class="hover-listing-image">
@@ -297,8 +298,7 @@
                                         </div>
                                         <div class="listing-item-content">
                                             <div class="listing-top-content">
-                                                <h6 class="title"><a href="#"><a href="#">Mercedez benz - c
-                                                            class</a></a></h6>
+                                                <h6 class="title"><a href="#"><a href="#">{{ car.name }}</a></a></h6>
                                                 <div class="review-wrap">
                                                     <div class="rating">
                                                         <i class="icon-Vector3"></i>
@@ -365,6 +365,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
                                 <div class="tf-pagination">
                                     <a class="prev page-numbers" href="#">
