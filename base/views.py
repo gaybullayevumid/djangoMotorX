@@ -18,8 +18,12 @@ def carPageView(request):
     return render(request=request, template_name=template_name, context=context)
 
 
-class CarDetailView(TemplateView):
+def carDetailView(request, pk):
     template_name = 'pages/car_detail.html'
+    car = Product.objects.get(pk=pk)
+    context = {'car':car}
+    return render(request=request, template_name=template_name, context=context)
+
 
 def newsPageView(request):
     template_name = 'pages/news.html'

@@ -357,7 +357,7 @@
                                                     <p class="price-sale">{{car.discounted_price}}</p>
                                                 </div>
                                                 <div class="btn-read-more">
-                                                    <a class="more-link" href="listing-details.html">
+                                                    <a class="more-link" href="{% url 'car_detail' car.pk %}"                                                    ">
                                                         <span>View details</span>
                                                         <i class="icon-arrow-right2"></i>
                                                     </a>
