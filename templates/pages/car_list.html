@@ -315,21 +315,21 @@
                                                             <i class="icon-gasoline-pump-1"></i>
                                                             <div class="inner">
                                                                 <span>Fuel type</span>
-                                                                <p>Petrol</p>
+                                                                <p>{{car.fuel_type}}</p>
                                                             </div>
                                                         </li>
                                                         <li class="listing-information size-engine">
                                                             <i class="icon-Group1"></i>
                                                             <div class="inner">
                                                                 <span>Mileage</span>
-                                                                <p>90 k.m</p>
+                                                                <p>{{car.mileage}}</p>
                                                             </div>
                                                         </li>
                                                         <li class="listing-information transmission">
                                                             <i class="icon-gearbox-1"></i>
                                                             <div class="inner">
                                                                 <span>Transmission</span>
-                                                                <p>Auto</p>
+                                                                <p>{{car.transmission}}</p>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -353,8 +353,8 @@
                                             </div>
                                             <div class="bottom-price-wrap">
                                                 <div class="price-wrap">
-                                                    <p class="price">$489</p>
-                                                    <p class="price-sale">$399</p>
+                                                    <p class="price">{{car.original_price}}</p>
+                                                    <p class="price-sale">{{car.discounted_price}}</p>
                                                 </div>
                                                 <div class="btn-read-more">
                                                     <a class="more-link" href="listing-details.html">
