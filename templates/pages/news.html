@@ -47,7 +47,7 @@
                                                min Read</a></span>
                                     </div>
                                     <h2 class="entry-title">
-                                        <a href="{% url 'car_detail' %}">{{post.title}} </a>
+                                        <a href="{% url 'car_detail' post.pk %}">{{post.title}} </a>
                                     </h2>
                                     <p class="entry-des">{{ post.body | slice:'200'}}</p>
                                     <div class="btn-read-more">
