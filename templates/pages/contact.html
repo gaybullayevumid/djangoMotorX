@@ -18,6 +18,7 @@
         <div class="widget-contact-us">
             <div class="themesflat-container">
                 <div class="contact-us">
+                    {% for contact in contacts %}
                     <div class="row mb-60">
                         <div class="col-md-12 col-lg-4">
                             <div class="contact-us-box">
@@ -33,7 +34,7 @@
                                     </svg>
                                 </div>
                                 <div class="title">Phone Number</div>
-                                <p class="des">+1255 - 568 - 6523 <br> +1255 - 568 - 6523</p>
+                                <p class="des">{{contact.phone}} <br> +1255 - 568 - 6523</p>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-4">
@@ -64,7 +65,7 @@
                                     </svg>
                                 </div>
                                 <div class="title">Address line</div>
-                                <p class="des">Bowery St, New York, NY <br> 10013,USA</p>
+                                <p class="des">{{contact.address}}</p>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-4">
@@ -87,10 +88,11 @@
                                     </svg>
                                 </div>
                                 <div class="title">Opening Hours</div>
-                                <p class="des">Moday - Friday <br> 09:00 AM - 05:00 PM</p>
+                                <p class="des">{{contact.table}} <br> {{contact.time}}</p>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                     <div class="form-contact-us-page">
                         <form action="/" id="form-contact-us-page">
                             <div class="input-contact-us-wrap">

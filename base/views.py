@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Post, Product
+from .models import Post, Product, Contact
 
 # Create your views here.
 
@@ -30,14 +30,11 @@ def newsPageView(request):
     posts = Post.objects.all()
     p = Paginator(posts, 3)
     page_number = request.GET.get('page')
-    # page_number = p.num_pages * "p"
     try:
-        posts = p.get_page(page_number)  # returns the desired page object
+        posts = p.get_page(page_number)
     except PageNotAnInteger:
-        # if page_number is not an integer then assign the first page
         posts = p.page(1)
     except EmptyPage:
-        # if page is empty then return last page
         posts = p.page(p.num_pages)
     context = {'posts': posts}
     return render(request=request, template_name=template_name, context=context)
@@ -48,5 +45,9 @@ def newsDetailView(request, pk):
     context = {'post':post}
     return render(request=request, template_name=template_name, context=context)
 
-class Contact(TemplateView):
+
+def contact(request):
     template_name = 'pages/contact.html'
+    contacts = Contact.objects.all()
+    context = {'contacts':contacts}
+    return render(request=request, template_name=template_name, context=context)
