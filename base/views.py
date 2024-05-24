@@ -14,6 +14,14 @@ class HomePageView(TemplateView):
 def carPageView(request):
     template_name = 'pages/car_list.html'
     cars = Product.objects.all()
+    p = Paginator(cars, 9)
+    page_num = request.GET.get('page')
+    try:
+        cars = p.get_page(page_num)
+    except PageNotAnInteger:
+        cars = p.page(1)
+    except EmptyPage:
+        cars = p.page([p.page_num])
     context = {'cars':cars}
     return render(request=request, template_name=template_name, context=context)
 

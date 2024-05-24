@@ -368,16 +368,20 @@
                                     {% endfor %}
                                 </div>
                                 <div class="tf-pagination">
-                                    <a class="prev page-numbers" href="#">
+                                    {%if cars.has_previous %}
+                                    <a class="prev page-numbers" href="?page={{cars.previous_page_number}}">
                                         <i class="icon-3"></i>
                                     </a>
+                                    {% endif %}
                                     <a class="page-numbers" href="#">1</a>
                                     <a class="page-numbers active" href="#">2</a>
                                     <a class="page-numbers" href="#">3</a>
                                     <a class="page-numbers" href="#">...</a>
-                                    <a class="next page-numbers" href="#">
+                                    {%if cars.has_next%}
+                                    <a class="next page-numbers" href="?page={{cars.next_page_number}}">
                                         <i class="icon--1"></i>
                                     </a>
+                                    {% endif %}
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab" tabindex="0">
